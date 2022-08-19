@@ -116,7 +116,9 @@ class _InstaListState extends State<InstaList> {
                   padding: EdgeInsets.symmetric(horizontal: 16.0),
                   child: Text(
                     'Liked by Neeraj kumar and 1.4k others',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic),
                   ),
                 ),
                 Padding(

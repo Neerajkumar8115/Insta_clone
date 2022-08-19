@@ -7,7 +7,7 @@ class InstaHome extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.white,
     elevation: 2,
-    leading: const Icon(
+    leading: Icon(
       Icons.camera_alt,
       color: Colors.black,
     ),
@@ -22,7 +22,7 @@ class InstaHome extends StatelessWidget {
           Icons.send,
           color: Colors.black,
         ),
-      )
+      ),
     ],
   );
   @override
@@ -37,11 +37,37 @@ class InstaHome extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            IconButton(onPressed: () {}, icon: const Icon(Icons.home)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.add_box)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
-            IconButton(onPressed: () {}, icon: const Icon(Icons.account_box)),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.home),
+              tooltip: "Home",
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.search),
+              tooltip: "Search",
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.add_box),
+              tooltip: "create post",
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: const Icon(Icons.favorite),
+              tooltip: "Favorite",
+            ),
+            IconButton(
+              onPressed: () {
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //       builder: (context) => const Drawer(),
+                //     ));
+              },
+              icon: const Icon(Icons.account_box),
+              tooltip: "Account",
+            ),
           ],
         ),
       ),
