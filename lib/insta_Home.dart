@@ -7,7 +7,7 @@ class InstaHome extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.white,
     elevation: 2,
-    leading: Icon(
+    leading: const Icon(
       Icons.camera_alt,
       color: Colors.black,
     ),
