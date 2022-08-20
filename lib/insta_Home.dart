@@ -59,11 +59,11 @@ class InstaHome extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {
-                // Navigator.push(
-                //     context,
-                //     MaterialPageRoute(
-                //       builder: (context) => const Drawer(),
-                //     ));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Drawer(),
+                    ));
               },
               icon: const Icon(Icons.account_box),
               tooltip: "Account",
